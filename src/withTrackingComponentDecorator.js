@@ -73,7 +73,6 @@ export default function withTrackingComponentDecorator(
         PropTypes.shape({ current: PropTypes.any }),
       ]),
     };
-    WithTracking.defaultProps = { rtFwdRef: undefined };
 
     hoistNonReactStatics(WithTracking, DecoratedComponent);
     return WithTracking;
